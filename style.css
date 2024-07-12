@@ -1,0 +1,136 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif; 
+}
+
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: rgb(253, 213, 219);
+}
+
+.wrapper {
+    display: grid; 
+    width: 80%;
+    height: 90%;
+    place-items: left;
+    box-sizing: border-box;
+    border: 2px solid pink;
+    border-radius: 5px;
+    padding-bottom: 40px;
+}
+.container {
+    position: relative; 
+    width: 600px; 
+    background: #fffafa; 
+    border-radius: 5px; 
+    display: grid;
+    place-items: center;
+}
+
+.header {
+    display: flex; 
+    width: 100%;
+    background-color: pink;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.searchbar {
+    padding-right: 20px;
+}
+
+.fas {
+    margin-left: 3px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid pink;
+}
+
+input.taskbar {
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    background-color: pink;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+h1.title {
+    background: pink;
+}
+
+.container .title {
+    line-height: 50px;
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.todo-container {
+    max-height: 500px;
+    height: 250px;
+    overflow-y: auto;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+.tasks {
+    width: 90%;
+    list-style-type: none;
+    border: 1px solid pink;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.tasks li {
+    border: 1px solid pink;
+    padding: 20px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.btn {
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px; 
+    float: right; 
+    
+}
+
+.confirm {
+    display: none;
+    position: absolute; 
+    top: 50%; 
+    background-color: pink;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.confirm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.confirm-btn button {
+    padding: 5px;
+}

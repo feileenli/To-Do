@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://kit.fontawesome.com/e7ee07d214.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css"> -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title"><i class="fa-solid fa-book"></i>
+                My<span class="text-primary">To-Do</span>List</h1>
+            <div class="searchbar">
+                <input type="text" id="filter" placeholder="Search Tasks...">
+                <i class="fas fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="wrapper">
+                <h2 class="title">Add Task <i class="fas fa-pencil"></i></h2>
+                <form id="addForm">
+                    <input type="text" class="taskbar" id="task">
+                    <input type="submit" value="Submit">
+                </form>
+            <h2 class="title">Tasks</h2>
+            <div class="todo-container">
+                <ul class="tasks" id="taskList">
+                    <li class="item">Walk the dog <button class="btn delete">X</button></li>
+                    <li class="item">Wash the dishes<button class="btn delete">X</button></li>
+                    <li class="item">Clean the car<button class="btn delete">X</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="confirm" id="panel"> 
+            <h4>Are You Sure You Want to Delete?</h2>
+                <div class="confirm-btn">
+                    <button class="confirm-delete-yes">Yes</button>
+                    <button>No</button>
+                </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
